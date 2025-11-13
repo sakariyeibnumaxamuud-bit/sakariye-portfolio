@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Sakariye Maxamuud — Portfolio</title>
+
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+
+  <!-- Main styles -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- CONTROLS BAR (theme / mode / language) -->
+  <div class="top-controls" aria-hidden="false">
+    <div class="container controls-inner">
+      <div class="left">
+        <label class="small-label" data-en="Theme" data-so="Mawduuc">Theme</label>
+        <select id="themeSelect" aria-label="Choose theme">
+          <option value="dark">Dark Modern</option>
+          <option value="light">Light Minimal</option>
+          <option value="gradient">Gradient Modern</option>
+        </select>
+
+        <label class="small-label" data-en="Mode" data-so="Nooca">Mode</label>
+        <select id="modeSelect" aria-label="Choose site mode">
+          <option value="portfolio">Portfolio</option>
+          <option value="freelancer">Freelancer</option>
+          <option value="student">Student</option>
+        </select>
+      </div>
+
+      <div class="right">
+        <label class="small-label" data-en="Language" data-so="Luqad">Language</label>
+        <select id="lang" aria-label="Choose language">
+          <option value="en">English</option>
+          <option value="so">Somali</option>
+        </select>
+        <a id="downloadCV" class="cv-btn" href="#" download="Sakariye_CV.pdf">CV</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- HEADER / NAV -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="logo">Sakariye</div>
+
+      <nav class="main-nav" id="mainNav" aria-label="Main navigation">
+        <a href="#home" class="nav-link active" data-en="Home" data-so="Hoyga">Home</a>
+        <a href="#about" class="nav-link" data-en="About" data-so="Ku Saabsan">About</a>
+        <a href="#skills" class="nav-link" data-en="Skills" data-so="Xirfadaha">Skills</a>
+        <a href="#portfolio" class="nav-link" data-en="Portfolio" data-so="Mashruucyada">Portfolio</a>
+        <a href="#education" class="nav-link" data-en="Education" data-so="Waxbarasho">Education</a>
+        <a href="#experience" class="nav-link" data-en="Experience" data-so="Khibrad">Experience</a>
+        <a href="#contact" class="nav-link" data-en="Contact" data-so="Xiriir">Contact</a>
+      </nav>
+
+      <div class="controls">
+        <select id="miniLang" class="lang-select" aria-label="Choose language (mini)">
+          <option value="en">EN</option>
+          <option value="so">SO</option>
+        </select>
+
+        <button id="hamburger" class="hamburger" aria-label="Toggle menu">
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- HERO / HOME -->
+  <section id="home" class="hero">
+    <div class="container hero-grid">
+      <div class="hero-text">
+        <h1 data-en="Hi, I'm Sakariye Maxamuud Saleebaan" data-so="Salaan, Magacaygu waa Sakariye Maxamuud Saleebaan"></h1>
+        <h2><span data-en="I'm a" data-so="Waxaan ahay"></span> <span class="typing" aria-live="polite"></span></h2>
+        <p class="lead" data-en="Cybersecurity student • Video editor • Forex trader" data-so="Arday Cybersecurity • Tafatiraha Video • Ganacsade Forex"></p>
+
+        <div class="hero-actions">
+          <a class="btn" id="hireBtn" href="#contact" data-en="Hire Me" data-so="I Shaqaalayso">Hire Me</a>
+          <a class="btn ghost" href="#portfolio" data-en="See Work" data-so="Eeg Mashruucyada">See Work</a>
+        </div>
+
+        <div class="social small">
+          <a href="https://www.instagram.com/rabi_yaqaan" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="https://www.linkedin.com/in/sakariye-osil-66b003322" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+          <a href="https://github.com/sakariyeibnumaxamuud-bit" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+          <a href="https://wa.me/252633647802" target="_blank" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+        </div>
+      </div>
+
+      <div class="hero-image">
+        <!-- Put your photo file named im_zakarie.png in same folder -->
+        <img src="im_zakarie.png" alt="Sakariye Maxamuud" id="profilePhoto" />
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="section">
+    <div class="container">
+      <h2 data-en="About Me" data-so="Ku Saabsan"></h2>
+      <div class="about-grid">
+        <div class="about-text">
+          <p data-en="I am Sakariye Maxamuud Saleebaan from Berbera, Somaliland. I studied in Sheikh and Hargeisa, graduated high school and college, and currently study Cybersecurity at OGF University. I love building projects, editing videos and learning security."
+             data-so="Waxaan ahay Sakariye Maxamuud Saleebaan oo ka soo jeeda Berbera, Somaliland. Waxaan wax ku bartay Sheekh iyo Hargeysa, waxaan ka qalin jabiyay dugsiga sare iyo kulliyadda, haatanna waxaan dhigtaa Cybersecurity OGF University. Waxaan jeclahay dhisida mashruucyada, tafatirka muuqaalada iyo barashada amniga."></p>
+        </div>
+        <div class="about-cards">
+          <div class="card"><h4 data-en="Location" data-so="Meesha">Berbera, Somaliland</h4></div>
+          <div class="card"><h4 data-en="Study" data-so="Waxbarasho">OGF University — Cybersecurity</h4></div>
+          <div class="card"><h4 data-en="Contact" data-so="Xiriir">sakariyeibnumaxamuud@gmail.com</h4></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills" class="section alt">
+    <div class="container">
+      <h2 data-en="Skills" data-so="Xirfadaha"></h2>
+      <div class="skills-grid">
+        <div class="skill">
+          <div class="skill-head"><span data-en="Video Editing" data-so="Tafatirka Muuqaallada">Video Editing</span><span class="percent">90%</span></div>
+          <div class="skill-bar"><div class="skill-fill" data-width="90%"></div></div>
+        </div>
+        <div class="skill">
+          <div class="skill-head"><span data-en="Graphic Design" data-so="Naqshad">Graphic Design</span><span class="percent">85%</span></div>
+          <div class="skill-bar"><div class="skill-fill" data-width="85%"></div></div>
+        </div>
+        <div class="skill">
+          <div class="skill-head"><span data-en="Web Development" data-so="Horumarinta Webka">Web Development</span><span class="percent">80%</span></div>
+          <div class="skill-bar"><div class="skill-fill" data-width="80%"></div></div>
+        </div>
+        <div class="skill">
+          <div class="skill-head"><span data-en="Cyber Security" data-so="Amniga Internetka">Cyber Security</span><span class="percent">75%</span></div>
+          <div class="skill-bar"><div class="skill-fill" data-width="75%"></div></div>
+        </div>
+        <div class="skill">
+          <div class="skill-head"><span data-en="Forex Trading" data-so="Ganacsiga Forex">Forex Trading</span><span class="percent">70%</span></div>
+          <div class="skill-bar"><div class="skill-fill" data-width="70%"></div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PORTFOLIO -->
+  <section id="portfolio" class="section">
+    <div class="container">
+      <h2 data-en="Portfolio" data-so="Mashruucyada"></h2>
+      <div class="portfolio-grid" id="portfolioGrid">
+        <!-- Project cards (replace images) -->
+        <article class="project">
+          <img src="project1.png" alt="Project 1">
+          <div class="project-info">
+            <h3 data-en="Video Editing" data-so="Video Editing">muqal samaynta</h3>
+            <p data-en="This project focused on video editing to create visually engaging and high-quality content. Advanced software such as Adobe Premiere Pro, CapCut, and After Effects was used, incorporating clean cuts, smooth transitions, and modern effects. The project resulted in professional videos suitable for YouTube, social media, and professional presentations.s." data-so="Mashruucan wuxuu diiradda saaray tafatirka fiidiyowyada si loo abuuro muuqaallo soo jiidasho leh oo tayo sare leh. Waxaa lagu isticmaalay software-ka casriga ah sida Adobe Premiere Pro, CapCut, iyo After Effects, iyadoo la adeegsanayo cuts nadiif ah, transitions smooth ah, iyo effects casri ah. Mashruucan wuxuu gaaray in fiidiyowyadu noqdaan kuwo professional ah, ku habboon YouTube, social media, iyo soo bandhigida shaqooyinka xirfadeed..">Short description of project 1.</p>
+          </div>
+        </article>
+
+        <article class="project">
+          <img src="project2.png" alt="Project 2">
+          <div class="project-info">
+            <h3 data-en="Web Development" data-so="Web Development">Project 2</h3>
+            <p data-en="This project focused on developing a modern website with an attractive design and easy navigation. It was built using HTML, CSS, and JavaScript, implementing modern design practices and user experience (UX) principles. The project resulted in a functional, responsive, and 
+            user-friendly website, suitable for showcasing skills and services.." data-so="Mashruucan wuxuu diiradda saaray horumarinta website casri ah oo leh muuqaal soo jiidasho leh iyo navigation fudud. Waxaa lagu sameeyay HTML, CSS, JavaScript, iyadoo la adeegsanayo hababka casriga ah ee design-ka iyo user experience-ka (UX). Mashruucan wuxuu gaaray in website-ku noqdo mid functional, responsive, 
+            iyo user-friendly, kaas oo ku habboon soo bandhigida xirfadaha iyo adeegyada..">Short description of project 2.</p>
+          </div>
+        </article>
+
+        <article class="project">
+          <img src="project3.png" alt="Project 3">
+          <div class="project-info">
+            <h3 data-en="Content Creation & Social Media Management" data-so="Content Creation & Social Media Management">Project 3</h3>
+            <p data-en="This project focused on creating high-quality content and managing social media pages such as Facebook, Instagram, and TikTok. It involved producing graphics, short videos, and engaging posts to increase audience interaction and reach. The project resulted in active, attractive, 
+            and professional social media pages, boosting brand presence and engagement.." data-so="Mashruucan wuxuu diiradda saaray abuurista content tayo sare leh iyo maamulka bogagga social media sida Facebook, Instagram, iyo TikTok. Waxaa lagu sameeyay graphics, short videos, iyo posts engaging ah si loo kordhiyo interaction-ka iyo audience reach. Mashruucan wuxuu gaaray in bogagga la maamulo ay noqdaan kuwo active,
+             attractive, iyo professional, taasoo kor u qaaday sumcadda iyo engagement-ka.">Short description of project 3.</p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES (only for Freelancer mode) -->
+  <section id="services" class="section alt" aria-hidden="true">
+    <div class="container">
+      <h2 data-en="Services" data-so="Adeegyada"></h2>
+      <div class="services-grid">
+        <div class="service card">
+          <h3 data-en="Video Editing" data-so="Tafatir Video">Video Editing</h3>
+          <p data-en="Professional editing for YouTube and social media." data-so="Tafatir xirfad leh oo loogu talagalay YouTube iyo baraha bulshada."></p>
+        </div>
+        <div class="service card">
+          <h3 data-en="Web Design" data-so="Naqshad Web">Web Design</h3>
+          <p data-en="Modern responsive websites and landing pages." data-so="Website-yo casri ah oo mobile-friendly ah."></p>
+        </div>
+        <div class="service card">
+          <h3 data-en="Forex Coaching" data-so="Tababar Forex">Forex Coaching</h3>
+          <p data-en="One-on-one trading coaching & strategy." data-so="Tababar ganacsi & istiraatiijiyad shaqsiyeed."></p>
+        </div>
+      </div>
+
+      <div class="pricing-grid">
+        <div class="card">
+          <h4 data-en="Starter" data-so="Bilow">Starter</h4>
+          <p class="price">€50</p>
+          <p data-en="Small projects" data-so="Mashruucyo yar">Small projects</p>
+        </div>
+        <div class="card">
+          <h4 data-en="Business" data-so="Ganacsi">Business</h4>
+          <p class="price">€200</p>
+          <p data-en="Full website or large editing" data-so="Website buuxa ama tafatir ballaaran">Full website or large editing</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EDUCATION -->
+  <section id="education" class="section">
+    <div class="container">
+      <h2 data-en="Education" data-so="Waxbarasho"></h2>
+      <ul class="timeline">
+        <li><strong data-en="Primary School" data-so="Waxbarashada Hoose">Primary School</strong><span data-en="Sheikh" data-so="Sheekh">Sheikh</span></li>
+        <li><strong data-en="Secondary School" data-so="Dugsiga Sare">Secondary School</strong><span data-en="Noradin — 2024" data-so="Noradin — 2024">Noradin — 2024</span></li>
+        <li><strong data-en="College (Diploma)" data-so="Kulliyad (Dibloma)">College (Diploma)</strong><span data-en="Tisqad — 2025" data-so="Tisqad — 2025">Tisqad — 2025</span></li>
+        <li><strong data-en="University" data-so="Jaamacad">University</strong><span data-en="OGF University — Cybersecurity" data-so="OGF University — Cybersecurity">OGF University — Cybersecurity</span></li>
+        <li><strong data-en="online college" data-so="waxbarsho online ah">collage</strong><span data-en="Coursera " data-so=" Coursera ">internate</span></li>
+        <li><strong data-en="online college" data-so="Waxbarashada online ah">collage</strong><span data-en=" Coursera " data-so=" Coursera ">internate</span></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section id="experience" class="section alt">
+    <div class="container">
+      <h2 data-en="Experience" data-so="Khibrad"></h2>
+      <ul class="timeline">
+        <li><strong data-en="Small Business Owner" data-so="Mulkiile Ganacsi Yar">Small Business Owner</strong><span data-en="Food business — 2024" data-so="Meherad cunto — 2024">Food business — 2024</span></li>
+        <li><strong data-en="Library Assistant" data-so="Kaaliyaha Maktabadda">Library Assistant</strong><span data-en="Assisted students" data-so="Ka caawiyay ardayda">Assisted students</span></li>
+        <li><strong data-en="Student Mentor" data-so="La-taliye Arday">Student Mentor</strong><span data-en="Help classmates with subjects" data-so="Caawi ardayda maadooyinka">Help classmates with subjects</span></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="section">
+    <div class="container">
+      <h2 data-en="Contact" data-so="Xiriir"></h2>
+      <div class="contact-grid">
+        <div>
+          <p><strong data-en="Email" data-so="Email">Email:</strong> <a href="mailto:sakariyeibnumaxamuud@gmail.com">sakariyeibnumaxamuud@gmail.com</a></p>
+          <p><strong data-en="WhatsApp" data-so="WhatsApp">WhatsApp:</strong> <a href="https://wa.me/252633647802">+252 63 3647802</a></p>
+        </div>
+        <div>
+          <p><strong data-en="Location" data-so="Meesha">Location:</strong> Hargeisa, Somaliland</p>
+          <p><strong data-en="Availability" data-so="La Heli Karo">Availability:</strong> Freelance & Collaborations</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© 2025 Sakariye Maxamuud Saleebaan — All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Script -->
+  <script src="script.js"></script>
+</body>
+</html>
